@@ -15,7 +15,7 @@ class QuestionsController < ApplicationController
       case @question
       when "I am going to work"
         @answer = "Great!"
-      when "#{/\w*[?]/}"
+      when /\w*[?]/
         @answer = "Silly question, get dressed and go to work!."
       else
         @answer = "I don't care, get dressed and go to work!"

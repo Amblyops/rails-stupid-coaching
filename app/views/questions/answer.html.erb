@@ -1,4 +1,10 @@
-<h1>You asked the coach:</h1>
-<%= @question%>
-<%= @answer %>
+<%=link_to "ask", ask_path, class: "btn btn-primary"%>
+
+<h2>You asked the coach:    <%= @question%></h2>
+<p></p>
+<div class="alert alert-warning" role="alert">
+<h2>The coach's advise is</h2>
+  <%= @answer%>
+</div>
+
 <%= yield %>
